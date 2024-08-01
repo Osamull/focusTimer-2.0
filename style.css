@@ -1,0 +1,105 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --font-color: #323238;
+    --bg-icons: #E1E1E6;
+    font-size: clamp(40%, 1% + 2vw, 62,5%);
+    font-family: sans-serif;
+}
+
+body
+
+main{
+    margin: 0 auto;
+    display: flex;
+    height: 100vh;
+
+    padding: 1rem;
+    
+    align-items: center;
+    justify-content: center;
+    place-items: center;
+    gap: 5rem;
+}
+
+.running .ph-play-circle,
+html:not(.running) .ph-pause-circle{
+    display: none;
+}
+
+.side-1 .timer{
+    display: flex;
+    font-size: 5rem;
+    font-weight: bold;
+    align-items: center;
+    justify-content: center;
+}
+
+.side-1 .buttons{
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.side-1 .buttons button{
+    border: none;
+    font-size: 28px;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+.side-2{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    width: 138px;
+    height: 152px;
+}
+
+.side-2 button{
+    border-radius: .8rem;
+    border: none;
+    background-color: var(--bg-icons);
+    cursor: pointer;
+}
+
+.side-2 .buttonTree:focus{
+    background-color: #28ad91;;
+    color: white;
+    transition: 500ms;
+}
+
+.side-2 .buttonCloud:focus{
+    background-color: #1d83e2;
+    color: white;
+    transition: 500ms;
+}
+
+.side-2 .buttonHouse:focus{
+    background-color: #f0b820;
+    color: white;
+    transition: 500ms;
+}
+
+.side-2 .buttonFire:focus{
+    background-color: #eb2315;
+    color: white;
+    transition: 500ms;
+}
+
+.sr-only{
+    width: 1px;
+    height: 1px;
+    position: absolute;
+    overflow: hidden;
+
+    margin: -1px;
+    padding: 0;
+    border: 0;
+    appearance: none; 
+}
